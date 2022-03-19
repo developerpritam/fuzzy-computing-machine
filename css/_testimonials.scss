@@ -1,42 +1,47 @@
 #testimonials {
-  .testimonial_top-title {
-    margin-bottom: 12px;
-  }
-  .clients_say {
-    border-radius: 0.8rem;
-    padding: 1.8rem;
-    p {
-      margin-bottom: 3.5rem;
-      line-height: 3rem;
-      font-family: "Roboto";
+  .testimonial_slider {
+    button.slick-next.slick-arrow,.slick-prev.slick-arrow{
+      display: none !important;
     }
-    i.fa-solid.fa-quote-left {
-      font-size: 3.4rem;
-      color: #8080804f;
-      margin-right: 1rem;
+    .testimonial_top-title {
+      margin-bottom: 12px;
     }
-
-    .bottom_clients {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      figure {
-        margin-right: 3rem;
-        img {
-          width: 7rem;
-          border-radius: 50%;
-        }
+    .clients_say {
+      border-radius: 0.8rem;
+      padding: 1.8rem;
+      p {
+        margin-bottom: 3.5rem;
+        line-height: 3rem;
+        font-family: "Roboto";
       }
-      .about_client {
-        .name {
-          font-weight: 600;
-          text-transform: capitalize;
-          font-size: 1.8rem;
-          margin-bottom: 0.2rem;
+      i.fa-solid.fa-quote-left {
+        font-size: 3.4rem;
+        color: #8080804f;
+        margin-right: 1rem;
+      }
+
+      .bottom_clients {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        figure {
+          margin-right: 3rem;
+          img {
+            width: 7rem;
+            border-radius: 50%;
+          }
         }
-        .c_profession {
-          text-transform: capitalize;
-          font-size: 1.5rem;
+        .about_client {
+          .name {
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem;
+          }
+          .c_profession {
+            text-transform: capitalize;
+            font-size: 1.5rem;
+          }
         }
       }
     }

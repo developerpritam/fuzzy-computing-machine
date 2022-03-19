@@ -14,20 +14,20 @@
     align-items: center;
     height: 75vh;
     flex-direction: column;
-    .hire_btn{
+    .hire_btn {
       margin-top: 2rem;
       background: var(--primary-color);
-    padding: 1.4rem 3.3rem;
-    font-weight: 600;
-    color: #fff;
-    transition: all .4s;
-    border: 2px solid transparent;
-   
-    &:hover{
-      background: transparent;
-      border: 2px solid var(--primary-color);
-      // padding: 1.2rem 3.1rem;
-    }
+      padding: 1.4rem 3.3rem;
+      font-weight: 600;
+      color: #fff;
+      transition: all 0.4s;
+      border: 0.2rem solid transparent;
+
+      &:hover {
+        background: transparent;
+        border: 0.2rem solid var(--primary-color);
+        // padding: 1.2rem 3.1rem;
+      }
     }
   }
 }

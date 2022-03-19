@@ -177,6 +177,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 0;
 }
 
 #portfolio_sec .portfolio_filter ul li {
@@ -267,10 +268,10 @@
 }
 
 #portfolio_sec .main-portfolio .box figure .work_detail i.fa-solid.fa-eye {
-  font-size: 22px;
+  font-size: 2.2rem;
   border: 1px solid #fff;
-  height: 45px;
-  width: 45px;
+  height: 4.5rem;
+  width: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,10 +282,10 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 0 auto 10px;
+  margin: 0 auto 1rem;
   color: #fff;
   border-radius: 50%;
-  padding: 6px;
+  padding: .6rem;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -322,7 +323,7 @@
   width: 100%;
   background: gray;
   border-radius: 1rem;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
   height: 1.6rem;
 }
 
@@ -339,36 +340,40 @@
 
 #skills .skills .progress .progress_bar span {
   position: absolute;
-  top: 2px;
+  top: .2rem;
   right: 0.4rem;
   color: #fff;
   font-size: 1.4rem;
-  line-height: 13px;
+  line-height: 1.3rem;
   font-weight: 500;
 }
 
-#testimonials .testimonial_top-title {
+#testimonials .testimonial_slider button.slick-next.slick-arrow, #testimonials .testimonial_slider .slick-prev.slick-arrow {
+  display: none !important;
+}
+
+#testimonials .testimonial_slider .testimonial_top-title {
   margin-bottom: 12px;
 }
 
-#testimonials .clients_say {
+#testimonials .testimonial_slider .clients_say {
   border-radius: 0.8rem;
   padding: 1.8rem;
 }
 
-#testimonials .clients_say p {
+#testimonials .testimonial_slider .clients_say p {
   margin-bottom: 3.5rem;
   line-height: 3rem;
   font-family: "Roboto";
 }
 
-#testimonials .clients_say i.fa-solid.fa-quote-left {
+#testimonials .testimonial_slider .clients_say i.fa-solid.fa-quote-left {
   font-size: 3.4rem;
   color: #8080804f;
   margin-right: 1rem;
 }
 
-#testimonials .clients_say .bottom_clients {
+#testimonials .testimonial_slider .clients_say .bottom_clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,23 +385,23 @@
           align-items: center;
 }
 
-#testimonials .clients_say .bottom_clients figure {
+#testimonials .testimonial_slider .clients_say .bottom_clients figure {
   margin-right: 3rem;
 }
 
-#testimonials .clients_say .bottom_clients figure img {
+#testimonials .testimonial_slider .clients_say .bottom_clients figure img {
   width: 7rem;
   border-radius: 50%;
 }
 
-#testimonials .clients_say .bottom_clients .about_client .name {
+#testimonials .testimonial_slider .clients_say .bottom_clients .about_client .name {
   font-weight: 600;
   text-transform: capitalize;
   font-size: 1.8rem;
   margin-bottom: 0.2rem;
 }
 
-#testimonials .clients_say .bottom_clients .about_client .c_profession {
+#testimonials .testimonial_slider .clients_say .bottom_clients .about_client .c_profession {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
@@ -435,14 +440,14 @@
   padding: 1.4rem 3.3rem;
   font-weight: 600;
   color: #fff;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  border: 2px solid transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 0.2rem solid transparent;
 }
 
 #hire_me .hire .hire_btn:hover {
   background: transparent;
-  border: 2px solid var(--primary-color);
+  border: 0.2rem solid var(--primary-color);
 }
 
 #latest_blog {
@@ -469,6 +474,7 @@
 #latest_blog .blog_card figure img {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
+  width: 100%;
 }
 
 #latest_blog .blog_card:hover img {
@@ -744,8 +750,8 @@ i.fa-angle-up {
   font-size: 2rem;
   background: var(--primary-color);
   color: #fff;
-  height: 35px;
-  width: 35px;
+  height: 3.5rem;
+  width: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,8 +844,8 @@ header nav {
 header nav.sticky {
   height: 6rem;
   background: #fff;
-  -webkit-box-shadow: 0 10px 40px 0 rgba(62, 68, 125, 0.1);
-          box-shadow: 0 10px 40px 0 rgba(62, 68, 125, 0.1);
+  -webkit-box-shadow: 0 1rem 4rem 0 rgba(62, 68, 125, 0.1);
+          box-shadow: 0 1rem 4rem 0 rgba(62, 68, 125, 0.1);
 }
 
 header nav.sticky .logo a {
@@ -887,31 +893,31 @@ header nav .nav_wrapper .menu ul a:hover {
 
 header nav #mobile_menu {
   display: none;
-  width: 30px;
-  height: 30px;
-  margin: 35px 0 20px 2px;
+  width: 3rem;
+  height: 3rem;
+  margin: 3.5rem 0 2rem .2rem;
   cursor: pointer;
   z-index: 100;
 }
 
 header nav #mobile_menu .bar {
-  height: 3px;
+  height: .3rem;
   width: 100%;
   background: #1b1b1b;
   display: block;
-  border-radius: 5px;
+  border-radius: .5rem;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 header nav #bar1 {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 header nav #bar3 {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
 }
 
 header nav .icon .bar {
@@ -919,8 +925,8 @@ header nav .icon .bar {
 }
 
 header nav .icon #bar1 {
-  -webkit-transform: translateY(4px) rotate(-45deg);
-          transform: translateY(4px) rotate(-45deg);
+  -webkit-transform: translateY(0.4rem) rotate(-45deg);
+          transform: translateY(0.4rem) rotate(-45deg);
 }
 
 header nav .icon #bar2 {
@@ -928,8 +934,8 @@ header nav .icon #bar2 {
 }
 
 header nav .icon #bar3 {
-  -webkit-transform: translateY(-2px) rotate(45deg);
-          transform: translateY(-2px) rotate(45deg);
+  -webkit-transform: translateY(-0.2rem) rotate(45deg);
+          transform: translateY(-0.2rem) rotate(45deg);
 }
 
 header nav .change {
@@ -937,7 +943,6 @@ header nav .change {
   height: 100vh;
   margin: 0;
   position: absolute;
-  /* font-size: 30px; */
   top: 0;
   right: 0;
   /* z-index: -100; */
@@ -1068,7 +1073,7 @@ header .middle_header .middle-header-wrapper .button_wrapper {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  margin-left: 3px;
+  margin-left: .3rem;
   -webkit-transition: .3s;
   transition: .3s;
 }

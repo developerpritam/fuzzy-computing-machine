@@ -16,7 +16,7 @@
         width: 100%;
         background: gray;
         border-radius: 1rem;
-        margin-bottom: 18px;
+        margin-bottom: 1.8rem;
         height: 1.6rem;
         .progress_bar {
           width: 0%;
@@ -28,11 +28,11 @@
           transition: all 1.5s;
           span {
             position: absolute;
-            top: 2px;
+            top: .2rem;
             right: 0.4rem;
             color: #fff;
             font-size: 1.4rem;
-            line-height: 13px;
+            line-height: 1.3rem;
             font-weight: 500;
           }
         }
