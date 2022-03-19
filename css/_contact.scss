@@ -1,0 +1,50 @@
+#contact_section {
+  .contact_top_title {
+    margin-bottom: 5rem;
+  }
+  .contact_option {
+    text-align: center;
+    i {
+      font-size: 3.8rem;
+    }
+    h5 {
+      margin-top: 1.6rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  form {
+    .row {
+      margin-top: 5.2rem;
+    }
+    .form_input {
+      width: 100%;
+      height: 100%;
+      border: 0.2rem solid #e0e0e0;
+      border-radius: 0.25rem;
+      outline: none;
+      padding: 1.2rem;
+      transition: all 0.2s;
+    }
+    .form_input:focus,
+    textarea:focus {
+      border: 0.2rem solid var(--primary-color);
+    }
+    textarea {
+      border: 0.2rem solid #e0e0e0;
+      outline: none;
+      border-radius: 0.25rem;
+      padding: 1rem 1.2rem;
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s;
+    }
+
+    .contact_submit_btn {
+      .primary_btn {
+        margin-right: 0;
+      }
+    }
+  }
+}

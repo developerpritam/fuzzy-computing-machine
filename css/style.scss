@@ -1,0 +1,415 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
+/* google fonts */
+@import "about";
+@import "services";
+@import "portfolio";
+@import "skills";
+@import "testimonials";
+@import "hire";
+@import "blog";
+@import "contact";
+@import "mediaquery";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; // equals to 10px
+}
+p,
+a,
+li,input,textarea {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 10rem 0;
+}
+
+p,
+a,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1b1b1b;
+}
+
+:root {
+  --primary-color: #ff014f;
+}
+
+// ################################# primary button global css start #########################
+
+// scroll top ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+i.fa-angle-up {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  background: var(--primary-color);
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 99;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    transition: 0.5s;
+  }
+}
+// scroll top ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+a.primary_btn {
+  background: #1b1b1b;
+  padding: 1.4rem 3.6rem;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+  margin-right: 3.8rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: var(--primary-color);
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 5.3rem;
+    transition: all 0.3s ease-out;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    top: 0;
+    visibility: visible;
+  }
+}
+
+span.tag {
+  background: var(--primary-color);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-weight: 800;
+  line-height: 1.4;
+  font-size: 3rem;
+}
+// ################################# primary button global css end #########################
+
+// custom css start here .>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+header {
+  width: 100%;
+  height: 100vh;
+  // background: #ffdad3;
+  // background: #FF014F;
+  background: rgba(255, 1, 79, 0.1);
+
+
+  nav {
+    // background: #f8c0c0;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    transition: 0.5s;
+    // nav fixed smooth transition
+    &.sticky {
+      height: 6rem;
+      background: #fff;
+      box-shadow: 0 10px 40px 0 rgba(62, 68, 125, 0.1);
+      .logo a {
+        color: #1b1b1b !important;
+      }
+      ul li a {
+        color: #1b1b1b;
+      }
+    }
+    // nav fixed smooth transition
+
+    .nav_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        a {
+          font-size: 2.8rem;
+          font-weight: 600;
+          color: #1b1b1b;
+        }
+      }
+
+      .menu {
+        // display: none;
+        ul {
+          display: flex;
+          margin: 0;
+
+          a {
+            margin: 0 1.5rem;
+            transition: 0.3s;
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+    // ############### mobile menu #################
+    #mobile_menu {
+      display: none;
+      width: 30px;
+      height: 30px;
+      margin: 35px 0 20px 2px;
+      cursor: pointer;
+      z-index: 100;
+      .bar {
+        height: 3px;
+        width: 100%;
+        // background: #fff;
+        background: #1b1b1b;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+    }
+
+    #bar1 {
+      transform: translateY(-5px);
+    }
+    #bar3 {
+      transform: translateY(5px);
+    }
+    .icon .bar {
+      background: #fff;
+    }
+    .icon #bar1 {
+      transform: translateY(4px) rotate(-45deg);
+    }
+    .icon #bar2 {
+      opacity: 0;
+    }
+    .icon #bar3 {
+      transform: translateY(-2px) rotate(45deg);
+    }
+
+    .change {
+      background: var(--primary-color);
+      height: 100vh;
+      margin: 0;
+      position: absolute;
+      /* font-size: 30px; */
+      top: 0;
+      right: 0;
+      /* z-index: -100; */
+      width: 40%;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+      ul li a{
+        color: #fff;
+        &:hover{
+          color: #1b1b1b !important;
+        }
+      }
+    }
+    // ############### mobile menu #################
+  }
+
+  .middle_header {
+    .middle-header-wrapper {
+      width: 100%;
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      figure{
+        margin-bottom: 1.5rem;
+        img.header_img {
+          width: 18rem;
+          border: 0.6rem solid var(--primary-color);
+          border-radius: 50%;
+        }
+      }
+      
+      .profesion {
+        font-size: 2.6rem;
+        font-weight: 300;
+      }
+      .animated_profesion {
+        font-size: 5rem;
+        font-weight: 600;
+      }
+      span.location {
+        font-size: 1.8rem;
+      }
+      .button_wrapper {
+        margin: 3rem 0 3.8rem 0;
+      }
+
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   background: #1b1b1b;
+      //   height: 5.6rem;
+      //   width: 0.1rem;
+      //   bottom: -8.5rem;
+      //   left: 50%;
+      //   animation: line_scroll 3s infinite;
+      // }
+
+      // @keyframes line_scroll {
+      //   0% {
+      //     transform-origin: top;
+      //     transform: scaleY(0);
+      //   }
+      //   50% {
+      //     transform-origin: top;
+      //     transform: scaleY(1);
+      //   }
+      //   51% {
+      //     transform-origin: bottom;
+      //     transform: scaleY(1);
+      //   }
+      //   100% {
+      //     transform-origin: bottom;
+      //     transform: scaleY(0);
+      //   }
+      // }
+    }
+  }
+}
+
+.contact_btn {
+  padding: 1.2rem 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+  font-weight: 500;
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: #1b1b1b;
+    height: 0.1rem;
+    width: 1.8rem;
+    top: 3.8rem;
+    left: 0;
+    animation: contact_btn_animate 4s alternate infinite;
+  }
+
+  @keyframes contact_btn_animate {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 80%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  i.fa-solid.fa-arrow-down {
+    height: 1.6rem;
+    width: 1.6rem;
+    font-size: 1.3rem;
+    border: 1px solid #1b1b1b;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 3px;
+    transition: .3s;
+}
+&:hover i.fa-solid.fa-arrow-down{
+border-color: #ff014f;
+}
+}
+
+// #################### footer start ########################
+footer {
+  background: #1b1b1b;
+  padding: 7rem 0;
+  .social_media {
+    ul {
+      display: flex;
+      padding-left: 0;
+      a {
+        // border: .1rem solid #fff;
+        background-color: rgba(241, 241, 241, 0.08);
+        height: 4.2rem;
+        width: 4.2rem;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 4.3rem;
+        color: #fff;
+        transition: all 0.5s;
+        margin-right: 1rem;
+        &:hover {
+          transform: rotate(360deg);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .copyright {
+    p {
+      color: #fff;
+      margin-top: 1.6rem;
+      a {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

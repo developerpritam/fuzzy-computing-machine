@@ -1,0 +1,78 @@
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+    ul {
+      flex-direction: column;
+      padding-left: 0;
+      text-align: center;
+      li {
+        margin: 15px 0;
+      }
+    }
+  }
+  #mobile_menu {
+    display: block !important;
+  }
+  // about
+  #about_me .about_img figure::before {
+    top: 2.8rem;
+    left: 2.8rem;
+}
+
+  // skills
+  .left_content {
+    margin-bottom: 42px;
+}
+}
+@media (max-width: 768px) {
+  // about
+  #about_me{
+    .about_img figure::before {
+      top: 3.6rem;
+      left: 3.6rem;
+  }
+    .right_content {
+      margin-top: 68px;
+  }
+  }
+
+  // testimonials
+  .c_profession {
+    font-size: 1.4rem !important;
+  }
+  #contact_section {
+    .contact_option {
+      margin-bottom: 3rem;
+    }
+  }
+  .change {
+    width: 50% !important;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 56% !important;
+  }
+  .change {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #about_me {
+    .right_content {
+      margin-top: 5.8rem;
+      .about_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        .social_media {
+          margin-top: 1.6rem;
+          ul {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
