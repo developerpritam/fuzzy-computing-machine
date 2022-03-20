@@ -1,16 +1,25 @@
 "use strict";
 
+// loading animation ============================
+const preloader = document.getElementById('loading');
+function preLoader(){
+  preloader.style.display = 'none';
+}
+
+// wow js code ===================================
+new WOW().init();
+
 // fixed navbar code ==================================
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function(){
   let nav = document.querySelector("nav");
-  nav.classList.toggle("sticky", window.scrollY > 0);
+nav.classList.toggle("sticky", window.scrollY > 0);
 });
 
 // mobile menu =======================================
-function onClickmenu() {
-  document.getElementById("mobile_menu").classList.toggle("icon");
-  document.getElementById("nav").classList.toggle("change");
-}
+function onClickmenu(){
+document.getElementById("mobile_menu").classList.toggle("icon");
+document.getElementById("nav").classList.toggle("change");
+};
 
 // skills section code ===============================
 window.addEventListener("scroll", () => {
@@ -23,6 +32,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 // typed.js plugin start =============================
 var typed = new Typed("#element", {
   strings: ["Designer", "Programmer", "Developer"],
@@ -34,22 +44,22 @@ var typed = new Typed("#element", {
 // this is filter button javascript =======================
 let list = document.querySelectorAll(".list");
 
-for (let i = 0; i < list.length; i++) {
-  list[i].addEventListener("click", function () {
-    for (let j = 0; j < list.length; j++) {
+for(let i = 0; i<list.length; i++){
+  list[i].addEventListener("click", function(){
+    for(let j = 0; j<list.length; j++){
       list[j].classList.remove("active");
     }
     this.classList.add("active");
-  });
+  })
 }
 
 // this is mixitup plugin jQuery ===========================
-$(document).ready(function () {
-  var mixer = mixitup(".main-portfolio");
+$(document).ready(function(){
+var mixer = mixitup('.main-portfolio');
 });
 
 // simple lightbox jQuery plugin ==================================
-$(".gallery a").simpleLightbox();
+$('.gallery a').simpleLightbox();
 $(".gallery a").removeAttr("title");
 
 // skills section code start ====================================
@@ -72,18 +82,18 @@ function hideProgress() {
 
 // testimonial slick slider ======================================
 $(document).ready(function () {
-  $(".testimonial_slider").slick({
-    autoplay: true,
-    // arrows: true,
-    slidesToShow: 2,
-    responsive: [
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+  $('.testimonial_slider').slick({
+      autoplay: true,
+      // arrows: true,
+      slidesToShow: 2,
+      responsive: [
+          {
+              breakpoint: 576,
+              settings: {
+                  slidesToShow: 1,
+              },
+          },
+      ]
   });
 });
 
@@ -106,3 +116,4 @@ $(document).ready(function () {
     $("html").animate({ scrollTop: 0 }, 500);
   });
 });
+

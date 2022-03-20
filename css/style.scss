@@ -19,6 +19,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+#loading{
+  width: 100%;
+  height: 100vh;
+  background: #fff url("../images/load.svg")no-repeat center;
+  background-size: 100px 100px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; // equals to 10px
