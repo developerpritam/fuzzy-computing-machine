@@ -42,8 +42,34 @@
     }
 
     .contact_submit_btn {
-      .primary_btn {
-        margin-right: 0;
+      .footer_contact_btn {
+        font-size: 1.6rem;
+        border: none;
+        background: #1b1b1b;
+        padding: 1.4rem 3.6rem;
+        font-weight: 500;
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+          position: absolute;
+          content: "";
+          background: var(--primary-color);
+          visibility: hidden;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 5.3rem;
+          transition: all 0.3s ease-out;
+          z-index: -1;
+        }
+        &:hover::after {
+          top: 0;
+          visibility: visible;
+        }
       }
     }
   }

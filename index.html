@@ -558,26 +558,26 @@
                     </div>
 
                     <!-- ########### form start here ########### -->
-                    <form action="contact.php" class="form">
+                    <form action="contact.php" method="POST" class="form">
                         <div class="row">
                             <div class="col-lg-6 mb-4">
-                                <input type="text" name="name" id="" class="form_input" placeholder="What Is Your Name">
+                                <input type="text" name="name" id="" class="form_input" placeholder="What Is Your Name" required>
                             </div>
 
                             <div class="col-lg-6 mb-4">
-                                <input type="email" name="email" id="" class="form_input" placeholder="Your Email Address">
+                                <input type="email" name="email" id="" class="form_input" placeholder="Your Email Address" required>
                             </div>
 
                             <div class="col-12 mb-4">
-                                <input type="text" name="subject" id="" class="form_input" placeholder="Your Subject">
+                                <input type="text" name="subject" id="" class="form_input" placeholder="Your Subject" required>
                             </div>
 
                             <div class="col-12 mb-4">
-                                <textarea name="message" id="" cols="30" rows="5" placeholder="Your Massage"></textarea>
+                                <textarea name="message" id="" cols="30" rows="5" placeholder="Your Massage" required></textarea>
                             </div>
 
                             <div class="contact_submit_btn d-flex justify-content-end">
-                                <a href="#" class="primary_btn mr-0">Send Massage</a>
+                                <button type="submit" class="footer_contact_btn">Send Massage</button>
                             </div>
                         </div>
                     </form>
