@@ -1,6 +1,33 @@
+/* 
+Theme Name: Portfo.- Bootstrap 5 Personal Porfolio
+Author: webdev_pritam
+Support: webdevpritam@gmail.com
+      pritambag426@gmail.com
+      
+Description: Portfo. is a minimal, Clean, Modern, Creative and Fully Responsive HTML5 One Page  Personal Template
+Version: 1.0.0
+*/
+/*
+===========================================
+ CSS Index 
+===========================================
+1. Header
+2. About
+3. Services
+4. Portfolio
+5. Skills
+6. Hire
+7. Testimonials
+8. Latest blog
+9. Contact
+10. Footer
+
+
+
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 /* google fonts */
+/* 2. About */
 #about_me .about_img figure {
   margin-right: 4.5rem;
   position: relative;
@@ -73,7 +100,7 @@
   border: .2rem solid transparent;
   color: #fff;
 }
-
+/* 3. Services */
 #services {
   background: #80808012;
   padding: 10rem 0;
@@ -161,6 +188,7 @@
           transform: rotateY(180deg);
 }
 
+/* 4. Portfolio */
 #portfolio_sec .portfolio_filter {
   margin: 3rem 0 4.5rem;
 }
@@ -308,6 +336,7 @@
   font-size: 1.4rem;
 }
 
+/* 5. Skills */
 #skills .left_content p {
   font-family: "Roboto";
   line-height: 3rem;
@@ -348,6 +377,7 @@
   font-weight: 500;
 }
 
+/* 7. Testimonials */
 #testimonials .testimonial_slider button.slick-next.slick-arrow, #testimonials .testimonial_slider .slick-prev.slick-arrow {
   display: none !important;
 }
@@ -406,6 +436,7 @@
   font-size: 1.5rem;
 }
 
+/* 6. Hire */
 #hire_me {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("../images/cup-of-coffee-g80c15a0a0_1920.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)), url("../images/cup-of-coffee-g80c15a0a0_1920.jpg");
@@ -450,6 +481,7 @@
   border: 0.2rem solid var(--primary-color);
 }
 
+/* 8. Latest blog */
 #latest_blog {
   background: #80808014;
   padding: 10rem 0;
@@ -559,6 +591,7 @@
   opacity: 1;
 }
 
+/* 9. Contact */
 #contact_section .contact_top_title {
   margin-bottom: 5rem;
 }
@@ -692,6 +725,9 @@
   }
   .change {
     width: 100% !important;
+  }
+  .nav_padding {
+    padding: 0 2rem !important;
   }
 }
 
@@ -860,6 +896,7 @@ h3 {
   font-size: 3rem;
 }
 
+/* 1. Header */
 header {
   width: 100%;
   height: 100vh;
@@ -912,6 +949,11 @@ header nav .nav_wrapper .logo a {
   font-size: 2.8rem;
   font-weight: 600;
   color: #1b1b1b;
+}
+
+header nav .nav_wrapper .logo .logo_img {
+  height: auto;
+  width: 7rem;
 }
 
 header nav .nav_wrapper .menu ul {
@@ -1122,6 +1164,7 @@ header .middle_header .middle-header-wrapper .button_wrapper {
   border-color: #ff014f;
 }
 
+/* 10. Footer */
 footer {
   background: #1b1b1b;
   padding: 7rem 0;

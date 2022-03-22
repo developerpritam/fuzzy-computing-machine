@@ -25,7 +25,7 @@
 <body onload="preLoader()">
     <!-- ################ website preloader ################ -->
     <div id="loading"></div>
-     <!-- ################ website preloader ################ -->
+    <!-- ################ website preloader ################ -->
 
     <!-- ######### scroll top######### -->
     <a href="#"><i class="fa-solid fa-angle-up"></i></a>
@@ -33,10 +33,13 @@
     <main>
         <header>
             <nav>
-                <div class="container">
+                <div class="container nav_padding">
                     <div class="nav_wrapper">
                         <div class="logo">
                             <a href="#">Portfo.</a>
+                            <!-- <a href="#"><img src="images/yourlogo.png" alt="" class="logo_img"></a>-->
+
+                            <!-- Note: if you want to use your logo image then you must uncomment 40 number code. and when use use your own logo image then you have to comment default line (39) which is Portfo. and also you can show logo as a text then you have to replace this Portfo. into your own text logo -->
                         </div>
 
                         <div class="menu" id="nav">
@@ -58,9 +61,6 @@
                             <span id="bar3" class="bar"></span>
                         </div>
                     </div>
-                    <!-- ############## mobile hamburher menu ############## -->
-
-                    <!-- ############## mobile hamburher menu ############## -->
                 </div>
             </nav>
 
@@ -533,7 +533,7 @@
 
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="contact_option">
+                        <div class="contact_option wow fadeInLeft">
                             <i class="fa-solid fa-envelope"></i>
                             <h5>Email me</h5>
                             <a href="mailto:portfo@example.com">portfo@example.com</a>
@@ -541,7 +541,7 @@
                     </div>
 
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="contact_option">
+                        <div class="contact_option wow fadeInDown">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                             <h5>Call</h5>
                             <a href="tel:+1008883665">+1 xxx-888-3665</a>
@@ -549,7 +549,7 @@
                     </div>
 
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="contact_option">
+                        <div class="contact_option wow fadeInRight">
                             <i class="fa-solid fa-location-dot"></i>
                             <h5>Visit</h5>
                             <p>64 Atlantic St.
@@ -561,19 +561,23 @@
                     <form action="contact.php" method="POST" class="form">
                         <div class="row">
                             <div class="col-lg-6 mb-4">
-                                <input type="text" name="name" id="" class="form_input" placeholder="What Is Your Name" required>
+                                <input type="text" name="name" id="" class="form_input" placeholder="What Is Your Name"
+                                    required>
                             </div>
 
                             <div class="col-lg-6 mb-4">
-                                <input type="email" name="email" id="" class="form_input" placeholder="Your Email Address" required>
+                                <input type="email" name="email" id="" class="form_input"
+                                    placeholder="Your Email Address" required>
                             </div>
 
                             <div class="col-12 mb-4">
-                                <input type="text" name="subject" id="" class="form_input" placeholder="Your Subject" required>
+                                <input type="text" name="subject" id="" class="form_input" placeholder="Your Subject"
+                                    required>
                             </div>
 
                             <div class="col-12 mb-4">
-                                <textarea name="message" id="" cols="30" rows="5" placeholder="Your Massage" required></textarea>
+                                <textarea name="message" id="" cols="30" rows="5" placeholder="Your Massage"
+                                    required></textarea>
                             </div>
 
                             <div class="contact_submit_btn d-flex justify-content-end">
@@ -606,7 +610,7 @@
 
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="copyright">
-                        <p>Copyright &copy; 2022 <a href="#">Portfo </a>All Rights Reserved.</p>
+                        <p>Copyright &copy; 2022 <a href="#">Portfo. </a>All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -614,14 +618,11 @@
     </footer>
 
     <!-- all plugins here-->
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate.js"></script>
+    <!-- jQuery -->
 
-    <script>
-
-    </script>
-
-    <!-- external js file -->
     <!-- wow.js plugin -->
     <script src="js/wow.min.js"></script>
     <!-- wow.js plugin -->
