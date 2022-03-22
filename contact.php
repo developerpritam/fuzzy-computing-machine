@@ -1,19 +1,31 @@
 <?php
 //get data from form  
-
-$name = $_POST['name'];
-$email= $_POST['email'];
-$subject= $_POST['subject'];
-$message= $_POST['message'];
-
-$to = "pritambag426@gmail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+if (isset($_POST["submit"])){
+    $name = $_POST['name'];
+    $email= $_POST['email'];
+    $subject= $_POST['subject'];
+    $message= $_POST['message'];
+    echo $name;
 }
-//redirect
-header("Location:thankyou.html");
+
+
+$to = "webdevpritam@gmail.com";
+$subject = $message;
+
+$message = "email: {$email}" $message;
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: webdevpritam@gmail.com';
+
+$mail = mail($to,$subject,$message,$headers);
+
+if($mail){
+    echo "<script>alert('Mail Send.');</script>";
+}else{
+    echo "<script>alert('Mail Not Send.');</script>";
+}
 ?>
