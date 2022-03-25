@@ -1,15 +1,23 @@
 <?php
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$subject = $_REQUEST['subject'];
-$message = $_REQUEST['message'];
+$name = $_POST["name"];
+$email = $_POST["email"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
 
-if(empty($name) || empty($email) || empty($message)){
-    echo "<script>alert('Please fil')</script>";
-}else{
-mail("pritambag426@gmail.com", $subject, $message, "From: $name <$email>");
-echo "<script>alert('Message send successfully')
-window.history.log(-1);
-</script>";
-}
+$email_from = $email;
+
+$email_subject = $subject;
+
+$email_body = "Name: $name.\n".
+              "Email: $email.\n".
+              "Subject: $subject.\n".
+              "Message: $message.\n";
+
+$to = "pritambag426@gmail.com";
+
+$headers = "From: $email_from \r\n";
+$headers = "Reply-To: $email \r\n";
+mail($to,$email_subject,$email_body,$headers);
+
+header("location: index.html");
 ?>
