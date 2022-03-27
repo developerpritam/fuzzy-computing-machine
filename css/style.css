@@ -1,11 +1,10 @@
 /* 
-Theme Name: Portfo.- Bootstrap 5 Personal Porfolio
-Author: webdev_pritam
-Support: webdevpritam@gmail.com
-      pritambag426@gmail.com
-      
-Description: Portfo. is a minimal, Clean, Modern, Creative and Fully Responsive HTML5 One Page  Personal Template
-Version: 1.0.0
+   Theme Name:  Portfo.- Bootstrap 5 Personal Porfolio
+       Author:  webdev_pritam
+      Support:  webdevpritam@gmail.com
+                pritambag426@gmail.com              
+  Description:  Portfo. is a minimal, Clean, Modern, Creative and Fully Responsive HTML5 One Page  Personal Template
+      Version:  1.0.0
 */
 /*
 ===========================================
@@ -21,13 +20,10 @@ Version: 1.0.0
 8. Latest blog
 9. Contact
 10. Footer
-
-
-
-/* google fonts */
+*/
+/*google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 /* google fonts */
-/* 2. About */
 #about_me .about_img figure {
   margin-right: 4.5rem;
   position: relative;
@@ -38,7 +34,7 @@ Version: 1.0.0
   position: absolute;
   height: 100%;
   width: 100%;
-  border: .3rem solid #8080801f;
+  border: 0.3rem solid #8080801f;
   top: 3.6rem;
   border-bottom-right-radius: 4.7rem;
   left: 3.6rem;
@@ -46,13 +42,13 @@ Version: 1.0.0
 }
 
 #about_me .about_img figure img {
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   -webkit-box-shadow: 0 0.1rem 1.1rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.1rem 1.1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 #about_me .right_content p {
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-family: "Roboto";
   line-height: 3rem;
   font-weight: 400;
@@ -80,7 +76,7 @@ Version: 1.0.0
 }
 
 #about_me .right_content .about_bottom .social_media ul a {
-  border: .2rem solid #8080804f;
+  border: 0.2rem solid #8080804f;
   height: 4.1rem;
   width: 4.1rem;
   display: inline-block;
@@ -90,17 +86,17 @@ Version: 1.0.0
   line-height: 3.8rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 }
 
 #about_me .right_content .about_bottom .social_media ul a:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   background: var(--primary-color);
-  border: .2rem solid transparent;
+  border: 0.2rem solid transparent;
   color: #fff;
 }
-/* 3. Services */
+
 #services {
   background: #80808012;
   padding: 10rem 0;
@@ -127,12 +123,13 @@ Version: 1.0.0
   position: relative;
   overflow: hidden;
   z-index: 1;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #services .s_card:hover i {
-  color: #fff;
+  color: var(--primary-color);
+  background: #fff;
 }
 
 #services .s_card:hover h4 {
@@ -165,12 +162,27 @@ Version: 1.0.0
 }
 
 #services .s_card i {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
+  background: var(--primary-color);
+  padding: 3.2rem;
+  border-radius: 50%;
+  color: #fff;
+  height: 5.6rem;
+  width: 5.6rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #services .s_card h4 {
   margin: 1.8rem 0 1.2rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 #services .s_card p {
@@ -178,9 +190,11 @@ Version: 1.0.0
   font-family: "Roboto";
 }
 
-#services .s_card i, #services .s_card h4, #services .s_card p {
-  -webkit-transition: .4s;
-  transition: .4s;
+#services .s_card i,
+#services .s_card h4,
+#services .s_card p {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #services .s_card:hover i {
@@ -188,7 +202,6 @@ Version: 1.0.0
           transform: rotateY(180deg);
 }
 
-/* 4. Portfolio */
 #portfolio_sec .portfolio_filter {
   margin: 3rem 0 4.5rem;
 }
@@ -221,7 +234,7 @@ Version: 1.0.0
   font-size: 1.4rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -275,8 +288,8 @@ Version: 1.0.0
 
 #portfolio_sec .main-portfolio .box figure img {
   border-radius: 0.5rem !important;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #portfolio_sec .main-portfolio .box figure .work_detail {
@@ -313,7 +326,7 @@ Version: 1.0.0
   margin: 0 auto 1rem;
   color: #fff;
   border-radius: 50%;
-  padding: .6rem;
+  padding: 0.6rem;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -336,16 +349,15 @@ Version: 1.0.0
   font-size: 1.4rem;
 }
 
-/* 5. Skills */
 #skills .left_content p {
   font-family: "Roboto";
   line-height: 3rem;
   padding-top: 2.7rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 #skills .skills p {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 #skills .skills .progress {
@@ -369,7 +381,7 @@ Version: 1.0.0
 
 #skills .skills .progress .progress_bar span {
   position: absolute;
-  top: .2rem;
+  top: 0.2rem;
   right: 0.4rem;
   color: #fff;
   font-size: 1.4rem;
@@ -377,13 +389,13 @@ Version: 1.0.0
   font-weight: 500;
 }
 
-/* 7. Testimonials */
-#testimonials .testimonial_slider button.slick-next.slick-arrow, #testimonials .testimonial_slider .slick-prev.slick-arrow {
+#testimonials .testimonial_slider button.slick-next.slick-arrow,
+#testimonials .testimonial_slider .slick-prev.slick-arrow {
   display: none !important;
 }
 
 #testimonials .testimonial_slider .testimonial_top-title {
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 #testimonials .testimonial_slider .clients_say {
@@ -436,7 +448,6 @@ Version: 1.0.0
   font-size: 1.5rem;
 }
 
-/* 6. Hire */
 #hire_me {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("../images/cup-of-coffee-g80c15a0a0_1920.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)), url("../images/cup-of-coffee-g80c15a0a0_1920.jpg");
@@ -481,7 +492,6 @@ Version: 1.0.0
   border: 0.2rem solid var(--primary-color);
 }
 
-/* 8. Latest blog */
 #latest_blog {
   background: #80808014;
   padding: 10rem 0;
@@ -492,12 +502,12 @@ Version: 1.0.0
   background: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 #latest_blog .blog_card:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1.5rem 2rem -0.1rem;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 1.5rem 2rem -0.1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1.3rem 3rem -0.1rem;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1.3rem 3rem -0.1rem;
 }
 
 #latest_blog .blog_card figure {
@@ -508,8 +518,8 @@ Version: 1.0.0
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   width: 100%;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 #latest_blog .blog_card:hover img {
@@ -518,7 +528,7 @@ Version: 1.0.0
 }
 
 #latest_blog .blog_card .bottom_card {
-  padding: .6rem 2.4rem 2.4rem;
+  padding: 0.6rem 2.4rem 2.4rem;
 }
 
 #latest_blog .blog_card .bottom_card .b_card_title {
@@ -539,7 +549,7 @@ Version: 1.0.0
 }
 
 #latest_blog .blog_card .bottom_card .date i {
-  margin-right: .2rem;
+  margin-right: 0.2rem;
   color: #6c757d;
 }
 
@@ -561,9 +571,9 @@ Version: 1.0.0
 #latest_blog .blog_card .bottom_card .read_more {
   font-weight: 600;
   color: #6c757d;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  padding: .6rem 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 0.6rem 0;
   position: relative;
 }
 
@@ -586,17 +596,19 @@ Version: 1.0.0
 }
 
 #latest_blog .blog_card .bottom_card .read_more:hover::after {
-  bottom: .5rem;
+  bottom: 0.5rem;
   visibility: visible;
   opacity: 1;
 }
 
-/* 9. Contact */
 #contact_section .contact_top_title {
   margin-bottom: 5rem;
 }
 
 #contact_section .contact_option {
+  background: rgba(255, 1, 79, 0.1);
+  border-radius: 1.3rem;
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -608,6 +620,10 @@ Version: 1.0.0
   margin-top: 1.6rem;
   font-size: 2rem;
   font-weight: 600;
+}
+
+#contact_section .contact_option .c-address {
+  font-size: 1.6rem;
 }
 
 #contact_section form .row {
@@ -688,7 +704,7 @@ Version: 1.0.0
   .menu ul li {
     margin: 1.8rem 0;
   }
-  #mobile_menu {
+  #toggle {
     display: block !important;
   }
   #about_me .about_img figure::before {
@@ -755,6 +771,18 @@ Version: 1.0.0
   }
 }
 
+@media (max-width: 327px) {
+  .middle-header-wrapper a.primary_btn {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 311px) {
+  .middle-header-wrapper a.primary_btn {
+    margin-right: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -768,7 +796,7 @@ Version: 1.0.0
   width: 100%;
   height: 100vh;
   background: #fff url("../images/load.svg") no-repeat center;
-  background-size: 100px 100px;
+  background-size: 10rem 10rem;
   position: fixed;
   z-index: 999;
 }
@@ -776,6 +804,16 @@ Version: 1.0.0
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: #fff;
 }
 
 p,
@@ -896,7 +934,6 @@ h3 {
   font-size: 3rem;
 }
 
-/* 1. Header */
 header {
   width: 100%;
   height: 100vh;
@@ -973,16 +1010,16 @@ header nav .nav_wrapper .menu ul a:hover {
   color: var(--primary-color);
 }
 
-header nav #mobile_menu {
+header nav #toggle {
   display: none;
   width: 3rem;
   height: 3rem;
-  margin: 3.5rem 0 2rem .2rem;
+  padding: 1rem 0 0 0;
   cursor: pointer;
   z-index: 100;
 }
 
-header nav #mobile_menu .bar {
+header nav #toggle .bar {
   height: .3rem;
   width: 100%;
   background: #1b1b1b;
@@ -1002,20 +1039,20 @@ header nav #bar3 {
           transform: translateY(0.5rem);
 }
 
-header nav .icon .bar {
+header nav .active .bar {
   background: #fff;
 }
 
-header nav .icon #bar1 {
+header nav .active #bar1 {
   -webkit-transform: translateY(0.4rem) rotate(-45deg);
           transform: translateY(0.4rem) rotate(-45deg);
 }
 
-header nav .icon #bar2 {
+header nav .active #bar2 {
   opacity: 0;
 }
 
-header nav .icon #bar3 {
+header nav .active #bar3 {
   -webkit-transform: translateY(-0.2rem) rotate(45deg);
           transform: translateY(-0.2rem) rotate(45deg);
 }
@@ -1027,7 +1064,6 @@ header nav .change {
   position: absolute;
   top: 0;
   right: 0;
-  /* z-index: -100; */
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,7 +1123,7 @@ header .middle_header .middle-header-wrapper span.location {
 }
 
 header .middle_header .middle-header-wrapper .button_wrapper {
-  margin: 3rem 0 3.8rem 0;
+  margin-top: 3rem;
 }
 
 .contact_btn {
@@ -1164,7 +1200,6 @@ header .middle_header .middle-header-wrapper .button_wrapper {
   border-color: #ff014f;
 }
 
-/* 10. Footer */
 footer {
   background: #1b1b1b;
   padding: 7rem 0;
@@ -1201,6 +1236,7 @@ footer .social_media ul a:hover {
 footer .copyright p {
   color: #fff;
   margin-top: 1.6rem;
+  text-align: center;
 }
 
 footer .copyright p a {

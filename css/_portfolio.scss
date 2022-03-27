@@ -19,7 +19,7 @@
           font-size: 1.4rem;
           font-weight: 500;
           text-transform: uppercase;
-          letter-spacing: .1rem;
+          letter-spacing: 0.1rem;
           transition: all 0.3s;
         }
         .active,
@@ -61,13 +61,13 @@
           transform: scale(2) translateX(0%) translateY(0%) translateZ(0)
             rotate(-28deg);
         }
-        &:hover img{
+        &:hover img {
           transform: scale(1.07);
         }
 
         img {
           border-radius: 0.5rem !important;
-          transition: .4s;
+          transition: 0.4s;
         }
 
         .work_detail {
@@ -93,7 +93,7 @@
             margin: 0 auto 1rem;
             color: #fff;
             border-radius: 50%;
-            padding: .6rem;
+            padding: 0.6rem;
             cursor: pointer;
             transition: 0.3s;
             &:hover {

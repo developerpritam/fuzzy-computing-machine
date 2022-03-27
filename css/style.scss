@@ -1,11 +1,10 @@
 /* 
-Theme Name: Portfo.- Bootstrap 5 Personal Porfolio
-Author: webdev_pritam
-Support: webdevpritam@gmail.com
-      pritambag426@gmail.com
-      
-Description: Portfo. is a minimal, Clean, Modern, Creative and Fully Responsive HTML5 One Page  Personal Template
-Version: 1.0.0
+   Theme Name:  Portfo.- Bootstrap 5 Personal Porfolio
+       Author:  webdev_pritam
+      Support:  webdevpritam@gmail.com
+                pritambag426@gmail.com              
+  Description:  Portfo. is a minimal, Clean, Modern, Creative and Fully Responsive HTML5 One Page  Personal Template
+      Version:  1.0.0
 */
 
 /*
@@ -22,10 +21,9 @@ Version: 1.0.0
 8. Latest blog
 9. Contact
 10. Footer
+*/
 
-
-
-/* google fonts */
+ /*google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 /* google fonts */
 @import "about";
@@ -50,10 +48,7 @@ Version: 1.0.0
   width: 100%;
   height: 100vh;
   background: #fff url("../images/load.svg")no-repeat center;
-  background-size: 100px 100px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  background-size: 10rem 10rem;
   position: fixed;
   z-index: 999;
 }
@@ -61,6 +56,11 @@ Version: 1.0.0
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; // equals to 10px
+}
+
+::selection{
+  background: var(--primary-color);
+  color: #fff;
 }
 
 p,
@@ -104,7 +104,7 @@ h6 {
   --primary-color: #ff014f;
 }
 
-// ################################# primary button global css start #########################
+// ####################### primary button global css start ####################
 
 // scroll top ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 i.fa-angle-up {
@@ -186,7 +186,6 @@ header {
 
 
   nav {
-    // background: #f8c0c0;
     width: 100%;
     height: 8rem;
     display: flex;
@@ -227,11 +226,9 @@ header {
       }
 
       .menu {
-        // display: none;
         ul {
           display: flex;
           margin: 0;
-
           a {
             margin: 0 1.5rem;
             transition: 0.3s;
@@ -243,11 +240,11 @@ header {
       }
     }
     // ############### mobile menu #################
-    #mobile_menu {
+    #toggle {
       display: none;
       width: 3rem;
       height: 3rem;
-      margin: 3.5rem 0 2rem .2rem;
+      padding: 1rem 0 0 0;
       cursor: pointer;
       z-index: 100;
       .bar {
@@ -266,16 +263,16 @@ header {
     #bar3 {
       transform: translateY(.5rem);
     }
-    .icon .bar {
+    .active .bar {
       background: #fff;
     }
-    .icon #bar1 {
+    .active #bar1 {
       transform: translateY(.4rem) rotate(-45deg);
     }
-    .icon #bar2 {
+    .active #bar2 {
       opacity: 0;
     }
-    .icon #bar3 {
+    .active #bar3 {
       transform: translateY(-.2rem) rotate(45deg);
     }
 
@@ -286,7 +283,6 @@ header {
       position: absolute;
       top: 0;
       right: 0;
-      /* z-index: -100; */
       width: 40%;
       display: flex;
       flex-direction: column !important;
@@ -331,7 +327,7 @@ header {
         font-size: 1.8rem;
       }
       .button_wrapper {
-        margin: 3rem 0 3.8rem 0;
+        margin-top: 3rem;
       }
     }
   }
@@ -398,7 +394,6 @@ footer {
       display: flex;
       padding-left: 0;
       a {
-        // border: .1rem solid #fff;
         background-color: rgba(241, 241, 241, 0.08);
         height: 4.2rem;
         width: 4.2rem;
@@ -421,6 +416,7 @@ footer {
     p {
       color: #fff;
       margin-top: 1.6rem;
+      text-align: center;
       a {
         color: var(--primary-color);
       }

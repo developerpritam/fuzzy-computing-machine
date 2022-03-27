@@ -10,32 +10,30 @@
       }
     }
   }
-  #mobile_menu {
+  #toggle {
     display: block !important;
   }
   // about
   #about_me .about_img figure::before {
     top: 2.8rem;
     left: 2.8rem;
-}
-
+  }
   // skills
   .left_content {
     margin-bottom: 4.2rem;
-}
+  }
 }
 @media (max-width: 768px) {
   // about
-  #about_me{
+  #about_me {
     .about_img figure::before {
       top: 3.6rem;
       left: 3.6rem;
-  }
+    }
     .right_content {
       margin-top: 6.8rem;
+    }
   }
-  }
-
   // testimonials
   .c_profession {
     font-size: 1.4rem !important;
@@ -58,13 +56,10 @@
     width: 100% !important;
   }
 
-  // nav container padding x
   .nav_padding {
     padding: 0 2rem !important;
+  }
 }
-}
-
-
 
 @media (max-width: 500px) {
   #about_me {
@@ -81,6 +76,22 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 327px) {
+  .middle-header-wrapper {
+    a.primary_btn {
+      margin-right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 311px) {
+  .middle-header-wrapper {
+    a.primary_btn {
+      margin-right: 0;
     }
   }
 }

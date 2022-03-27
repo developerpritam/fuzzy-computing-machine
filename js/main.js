@@ -16,10 +16,23 @@ nav.classList.toggle("sticky", window.scrollY > 0);
 });
 
 // mobile menu =======================================
-function onClickmenu(){
-document.getElementById("mobile_menu").classList.toggle("icon");
-document.getElementById("nav").classList.toggle("change");
-};
+
+const toggle = document.getElementById('toggle');
+const sidebar = document.getElementById('sidebar');
+
+document.onclick = function(e){
+  if(e.target.id !== 'sidebar' && e.target.id !== 'toggle')
+  {
+  toggle.classList.remove('active');
+  sidebar.classList.remove('change');
+  }
+}
+
+toggle.onclick = function(){
+  toggle.classList.toggle('active');
+  sidebar.classList.toggle('change');
+}
+// mobile menu =======================================
 
 // skills section code ===============================
 window.addEventListener("scroll", () => {
@@ -31,7 +44,6 @@ window.addEventListener("scroll", () => {
     hideProgress();
   }
 });
-
 
 // typed.js plugin start =============================
 var typed = new Typed("#element", {
@@ -116,4 +128,3 @@ $(document).ready(function () {
     $("html").animate({ scrollTop: 0 }, 500);
   });
 });
-
