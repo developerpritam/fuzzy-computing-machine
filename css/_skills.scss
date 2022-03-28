@@ -1,0 +1,42 @@
+// 5. Skills
+#skills {
+  .left_content {
+    p {
+      font-family: "Roboto";
+      line-height: 3rem;
+      padding-top: 2.7rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .skills {
+    p {
+      margin-bottom: 0.6rem;
+    }
+    .progress {
+      width: 100%;
+      background: gray;
+      border-radius: 1rem;
+      margin-bottom: 1.8rem;
+      height: 1.6rem;
+      .progress_bar {
+        width: 0%;
+        opacity: 0;
+        height: 100%;
+        background: var(--primary-color);
+        border-radius: 1rem;
+        position: relative;
+        transition: all 1.5s;
+        span {
+          position: absolute;
+          top: 0.2rem;
+          right: 0.4rem;
+          color: #fff;
+          font-size: 1.4rem;
+          line-height: 1.3rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

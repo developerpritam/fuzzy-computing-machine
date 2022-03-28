@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <title>Portfo.</title>
+
+    <!-- others css  -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/simpleLightbox.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css" class="css">
+    <!-- external css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="preLoader()">
+    <!-- ################ website preloader ################ -->
+    <div id="loading"></div>
+    <!-- ################ website preloader ################ -->
+
+    <!-- ######### scroll top######### -->
+    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    <!-- ########## scroll top####### -->
+    <main>
+        <header>
+            <nav>
+                <div class="container nav_padding">
+                    <div class="nav_wrapper">
+                        <div class="logo">
+                            <a href="#">Portfo.</a>
+                            <!-- <a href="#"><img src="images/yourlogo.png" alt="" class="logo_img"></a>-->
+
+                            <!-- Note: if you want to use your logo image then you must uncomment 40 number code. and when use use your own logo image then you have to comment default line (39) which is Portfo. and also you can show logo as a text then you have to replace this Portfo. into your own text logo -->
+                        </div>
+
+                        <div class="menu" id="sidebar">
+                            <ion-icon name="close-outline" class="header_close" id="close-menu"></ion-icon>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about_me">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio_sec">Portfolio</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#testimonials">Client</a></li>
+                                <li><a href="#latest_blog">Blog</a></li>
+                            </ul>
+                        </div>  
+                        <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>                 
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="middle_header">
+                    <div class="middle-header-wrapper">
+                        <figure class="wow fadeInDown">
+                            <img src="images/self.jpg" alt="Man image" class="header_img">
+                        </figure>
+
+                        <span class="profesion text-uppercase d-block">Hi, i'm John Pineda</span>
+                        <div class="animated_profesion d-block">
+                            <span id="element"></span>
+                        </div>
+                        <!-- <span class="animated_profesion d-block">Developer</span> -->
+                        <span class="location">Based in Los Angeles, USA</span>
+                        <div class="button_wrapper">
+                            <a href="#portfolio_sec" class="primary_btn">View My Works</a>
+                            <a href="#contact_section" class="contact_btn">Contact Me <i
+                                    class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- #################### about me start ################# -->
+        <section id="about_me">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-4 mx-auto">
+                        <div class="about_img wow fadeInLeft">
+                            <figure>
+                                <img src="images/client-about.jpg" alt="About me image">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <div class="right_content wow fadeInRight">
+                            <span class="tag">About me</span>
+                            <h3>Innovative Ui & Ux Designer Based in New York, USA</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum dicta sed quod
+                                corrupti repellendus molestias perferendis cumque deleniti autem quas culpa nihil sequi
+                                et
+                                qui placeat beatae earum animi quos obcaecati. Ipsa dignissimos sequi quia vero
+                                voluptatum
+                                minus. Rem ducimus in eum recusandae beatae</p>
+                            <div class="about_bottom">
+                                <div class="download_cv">
+                                    <a href="images/cv.pdf" class="primary_btn" download="official-cv">Download cv</a>
+                                </div>
+
+                                <div class="social_media">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ######################## services start ########################## -->
+        <section id="services">
+            <div class="container">
+                <div class="title text-center">
+                    <span class="tag">Services</span>
+                    <h3>How I Can Help Your Next Project</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="s_card">
+                            <i class="fa-solid fa-paint-roller"></i>
+                            <h4>Graphic Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt ad nisi
+                                voluptates. Ex, cupiditate</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="s_card">
+                            <i class="fa fa-laptop"></i>
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt ad nisi
+                                voluptates. Ex, cupiditate</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="s_card">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h4>Web Development</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt ad nisi
+                                voluptates. Ex, cupiditate</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="s_card">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>Responsive Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt ad nisi
+                                voluptates. Ex, cupiditate</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="s_card">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Business Analysis</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt ad nisi
+                                voluptates. Ex, cupiditate</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="s_card">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <h4>Digital Marketing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt ad nisi
+                                voluptates. Ex, cupiditate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ########################## portfolio start ############################## -->
+        <section id="portfolio_sec">
+            <div class="container">
+                <div class="portfolio_top_title text-center">
+                    <span class="tag">portfolio</span>
+                    <h3>Some Of My Most Recent Projects</h3>
+                </div>
+
+                <div class="portfolio_filter">
+                    <ul>
+                        <li><button class="list active" data-filter="all">all</button></li>
+                        <li><button class="list" data-filter=".graphic">graphic</button></li>
+                        <li><button class="list" data-filter=".web">web</button></li>
+                        <li><button class="list" data-filter=".branding">branding</button></li>
+                        <li><button class="list" data-filter=".advertising">advertising</button></li>
+                    </ul>
+                </div>
+
+                <div class="main-portfolio">
+                    <div class="row gallery">
+                        <div class="col-lg-4 col-md-6 mix web graphic advertising">
+                            <div class="box">
+                                <a href="images/1.jpg" title="Caption for item 1">
+                                    <figure>
+                                        <img src="images/1.jpg" alt="">
+                                        <div class="work_detail">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <h4>Project Title</h4>
+                                            <p>Category</p>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mix web branding">
+                            <div class="box">
+                                <a href="images/2.jpg" title="Caption for item 2">
+                                    <figure>
+                                        <img src="images/2.jpg" alt="">
+                                        <div class="work_detail">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <h4>Project Title</h4>
+                                            <p>Category</p>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mix graphic branding">
+                            <div class="box">
+                                <a href="images/3.jpg" title="Caption for item 3">
+                                    <figure>
+                                        <img src="images/3.jpg" alt="">
+                                        <div class="work_detail">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <h4>Project Title</h4>
+                                            <p>Category</p>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mix advertising">
+                            <div class="box">
+                                <a href="images/4.jpg" title="Caption for item 4">
+                                    <figure>
+                                        <img src="images/4.jpg" alt="">
+                                        <div class="work_detail">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <h4>Project Title</h4>
+                                            <p>Category</p>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mix web branding">
+                            <div class="box">
+                                <a href="images/5.jpg" title="Caption for item 5">
+                                    <figure>
+                                        <img src="images/5.jpg" alt="">
+                                        <div class="work_detail">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <h4>Project Title</h4>
+                                            <p>Category</p>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mix web advertising">
+                            <div class="box">
+                                <a href="images/6.jpg" title="Caption for item 6">
+                                    <figure>
+                                        <img src="images/6.jpg" alt="">
+                                        <div class="work_detail">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <h4>Project Title</h4>
+                                            <p>Category</p>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ########################## portfolio end ############################## -->
+
+        <!-- ########################### skills section start here ############################ -->
+        <section id="skills">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-sm-12 mx-auto">
+                        <div class="left_content wow fadeInLeft">
+                            <span class="tag">Skills</span>
+                            <h3>I Have High Skill In Desigining And Developing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ratione in debitis
+                                voluptatem, sint iste. Esse laboriosam necessitatibus veniam sint, nostrum ea quam</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-12 mx-auto">
+                        <div class="skills wow fadeInRight" id="skills-section">
+                            <p>HTML & CSS</p>
+                            <div class="progress">
+                                <div class="progress_bar" data-progress="90">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+
+                            <p>JAVASCRIPT</p>
+                            <div class="progress">
+                                <div class="progress_bar" data-progress="75">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+
+                            <p>ADOBE PHOTOSHOP</p>
+                            <div class="progress">
+                                <div class="progress_bar" data-progress="80">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+
+                            <p>FIGMA</p>
+                            <div class="progress">
+                                <div class="progress_bar" data-progress="85">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ########################### hire me ############################### -->
+        <section id="hire_me">
+            <div class="container">
+                <div class="row">
+                    <div class="hire text-center">
+                        <h3 class="text-white text-capitalize wow fadeInDown">Interested in working with me?</h3>
+                        <a href="#contact_section" class="hire_btn wow fadeInUp">Hire me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ######################### testimonials ############################ -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="testimonial_top-title">
+                    <span class="tag">Testimonials</span>
+                    <h3>What Clients Say About Me</h3>
+                </div>
+                <div class="row testimonial_slider">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="clients_say">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit Laboriosam iure eius assumenda
+                                aliquam tempore animi vero adipisci, expedita hic. Enim</p>
+                            <div class="bottom_clients">
+                                <figure>
+                                    <img src="images/client.jpg" alt="Client image">
+                                </figure>
+
+                                <div class="about_client">
+                                    <span class="name d-block">linzi hover</span>
+                                    <span class="c_profession">Graphic designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="clients_say">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit Laboriosam iure eius assumenda
+                                aliquam tempore animi vero adipisci, expedita hic. Enim</p>
+                            <div class="bottom_clients">
+                                <figure>
+                                    <img src="images/client2.jpg" alt="Client image">
+                                </figure>
+
+                                <div class="about_client">
+                                    <span class="name d-block">linzi hover</span>
+                                    <span class="c_profession">Graphic designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="clients_say">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit Laboriosam iure eius assumenda
+                                aliquam tempore animi vero adipisci, expedita hic. Enim</p>
+                            <div class="bottom_clients">
+                                <figure>
+                                    <img src="images/client3.jpg" alt="Client image">
+                                </figure>
+
+                                <div class="about_client">
+                                    <span class="name d-block">linzi hover</span>
+                                    <span class="c_profession">Graphic designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="clients_say">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit Laboriosam iure eius assumenda
+                                aliquam tempore animi vero adipisci, expedita hic. Enim</p>
+                            <div class="bottom_clients">
+                                <figure>
+                                    <img src="images/client2.jpg" alt="Client image">
+                                </figure>
+
+                                <div class="about_client">
+                                    <span class="name d-block">linzi hover</span>
+                                    <span class="c_profession">Graphic designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ######################### testimonials ############################ -->
+
+
+        <!-- ####################### latest blog ############################# -->
+        <section id="latest_blog">
+            <div class="container">
+                <div class="blog_top_title text-center">
+                    <span class="tag">News</span>
+                    <h3>Latest Blog</h3>
+                </div>
+                <div class="row gx-4">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog_card wow fadeInLeft">
+                            <figure>
+                                <img src="images/laptop-using.jpg" alt="Blog image">
+                            </figure>
+                            <div class="bottom_card">
+                                <a href="#" class="b_card_title d-block">Sequi tenetur vero placeat quam inventore
+                                    Nostrum</a>
+                                <span class="date"><i class="fa fa-calendar"></i> 20 July 2021 | <i
+                                        class="fa-solid fa-user"></i> <a href="#" class="author">By jhon</a></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis ipsum hic
+                                    harum
+                                    cum exercitationem</p>
+                                <a href="#" class="read_more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog_card wow fadeInUp">
+                            <figure>
+                                <img src="images/engineering.jpg" alt="Blog image">
+                            </figure>
+                            <div class="bottom_card">
+                                <a href="#" class="b_card_title d-block">Repellat aliquam architecto est eius natus
+                                    autem</a>
+                                <span class="date"><i class="fa fa-calendar"></i> 20 July 2021 | <i
+                                        class="fa-solid fa-user"></i> <a href="#" class="author">By jhon</a></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis ipsum hic
+                                    harum
+                                    cum exercitationem</p>
+                                <a href="#" class="read_more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="blog_card wow fadeInRight">
+                            <figure>
+                                <img src="images/bitcoin.jpg" alt="Blog image">
+                            </figure>
+                            <div class="bottom_card">
+                                <a href="#" class="b_card_title d-block">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing</a>
+                                <span class="date"><i class="fa fa-calendar"></i> 20 July 2021 | <i
+                                        class="fa-solid fa-user"></i> <a href="#" class="author">By jhon</a></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis ipsum hic
+                                    harum
+                                    cum exercitationem</p>
+                                <a href="#" class="read_more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ####################### latest blog ############################# -->
+
+        <!-- ################# contact start ###################### -->
+        <section id="contact_section">
+            <div class="container">
+                <div class="contact_top_title">
+                    <span class="tag">contact me</span>
+                    <h3>let's Work Together!</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact_option wow fadeInLeft">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h5>Email me</h5>
+                            <a href="mailto:portfo@example.com">portfo@example.com</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact_option wow fadeInDown">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h5>Call</h5>
+                            <a href="tel:+1008883665">+1 xxx-888-3665</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact_option wow fadeInRight">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h5>Visit</h5>
+                            <span class="c-address">64 Atlantic St.
+                                Bronx, NY 10467</span>
+                        </div>
+                    </div>
+
+                    <!-- ########### form start here ########### -->
+                    <form action="contact.php" method="POST" class="form">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <input type="text" name="name" class="form_input" placeholder="What Is Your Name"
+                                    required>
+                            </div>
+
+                            <div class="col-lg-6 mb-4">
+                                <input type="email" name="email" class="form_input" placeholder="Your Email Address"
+                                    required>
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <input type="text" name="subject" class="form_input" placeholder="Your Subject"
+                                    required>
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <textarea name="message" cols="30" rows="5" placeholder="Your Massage"
+                                    required></textarea>
+                            </div>
+
+                            <div class="contact_submit_btn d-flex justify-content-end">
+                                <button type="submit" class="footer_contact_btn">Send Massage</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- ########### form start here ########### -->
+                </div>
+            </div>
+        </section>
+        <!-- ################# contact end ###################### -->
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="social_media">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2022 <a href="#">Portfo. </a>All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate.js"></script>
+    <!-- jQuery -->
+
+    <!-- ionicons fonts cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ionicons fonts cdn -->
+
+    <!-- wow.js plugin -->
+    <script src="js/wow.min.js"></script>
+    <!-- wow.js plugin -->
+
+    <!-- jQuery gallery lightbox plugin -->
+    <script src="js/simpleLightbox.min.js"></script>
+    <!-- jQuery gallery lightbox plugin -->
+
+    <!-- ######### mixitup plugin ########### -->
+    <script src="js/mixitup.min.js"></script>
+    <!-- ######### mixitup plugin ########### -->
+
+    <!-- ############ typed.js plugin ########### -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- ############ typed.js plugin ########### -->
+
+    <!-- ############ slick slider ########### -->
+    <script src="js/slick.min.js"></script>
+    <!-- ############ slick slider ########### -->
+
+    <!-- ############ main custom javascript ############ -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
