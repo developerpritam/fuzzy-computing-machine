@@ -1,18 +1,57 @@
 @media (max-width: 992px) {
-  .menu {
-    display: none;
-    ul {
-      flex-direction: column;
-      padding-left: 0;
-      text-align: center;
-      li {
-        margin: 1.8rem 0;
+  .nav_wrapper {
+    #sidebar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: var(--primary-color);
+      width: 60%;
+      height: 100vh;
+      z-index: 100;
+      transition: 0.5s;
+      border-radius: 0 0 0 50%;
+      .header_close {
+        position: absolute;
+        top: 2.4rem;
+        right: 3rem;
+        display: block !important;
+        font-size: 3.2rem;
+        border-radius: 50%;
+        color: var(--primary-color);
+        background: #fff;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        a {
+          color: #fff;
+          margin: 13px 0;
+          display: block;
+          &:hover {
+            color: #1b1b1b;
+          }
+        }
       }
     }
+    .header_toggle {
+      display: inline !important;
+      color: #1b1b1b;
+      font-size: 3.2rem;
+    }
   }
-  #toggle {
-    display: block !important;
+  ion-icon {
+    cursor: pointer;
   }
+  // show sidebar after click
+  .show {
+    right: 0px !important;
+  }
+  // show sidebar after click
+
   // about
   #about_me .about_img figure::before {
     top: 2.8rem;
@@ -23,6 +62,7 @@
     margin-bottom: 4.2rem;
   }
 }
+
 @media (max-width: 768px) {
   // about
   #about_me {
@@ -52,7 +92,7 @@
   html {
     font-size: 56% !important;
   }
-  .change {
+  #sidebar {
     width: 100% !important;
   }
 

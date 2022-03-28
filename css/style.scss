@@ -23,7 +23,7 @@
 10. Footer
 */
 
- /*google fonts */
+/*google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 /* google fonts */
 @import "about";
@@ -44,10 +44,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-#loading{
+#loading {
   width: 100%;
   height: 100vh;
-  background: #fff url("../images/load.svg")no-repeat center;
+  background: #fff url("../images/load.svg") no-repeat center;
   background-size: 10rem 10rem;
   position: fixed;
   z-index: 999;
@@ -58,14 +58,16 @@ html {
   font-size: 62.5%; // equals to 10px
 }
 
-::selection{
+::selection {
   background: var(--primary-color);
   color: #fff;
 }
 
 p,
 a,
-li,input,textarea {
+li,
+input,
+textarea {
   font-size: 1.6rem;
 }
 
@@ -184,7 +186,6 @@ header {
   height: 100vh;
   background: rgba(255, 1, 79, 0.1);
 
-
   nav {
     width: 100%;
     height: 8rem;
@@ -219,7 +220,7 @@ header {
           color: #1b1b1b;
         }
 
-        .logo_img{
+        .logo_img {
           height: auto;
           width: 7rem;
         }
@@ -238,64 +239,13 @@ header {
           }
         }
       }
-    }
-    // ############### mobile menu #################
-    #toggle {
-      display: none;
-      width: 3rem;
-      height: 3rem;
-      padding: 1rem 0 0 0;
-      cursor: pointer;
-      z-index: 100;
-      .bar {
-        height: .3rem;
-        width: 100%;
-        background: #1b1b1b;
-        display: block;
-        border-radius: .5rem;
-        transition: 0.3s ease;
+      // ########## mobile menu button ##########
+      .header_close,
+      .header_toggle {
+        display: none;
       }
+      // ########## mobile menu button ##########
     }
-
-    #bar1 {
-      transform: translateY(-.5rem);
-    }
-    #bar3 {
-      transform: translateY(.5rem);
-    }
-    .active .bar {
-      background: #fff;
-    }
-    .active #bar1 {
-      transform: translateY(.4rem) rotate(-45deg);
-    }
-    .active #bar2 {
-      opacity: 0;
-    }
-    .active #bar3 {
-      transform: translateY(-.2rem) rotate(45deg);
-    }
-
-    .change {
-      background: var(--primary-color);
-      height: 100vh;
-      margin: 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 40%;
-      display: flex;
-      flex-direction: column !important;
-      align-items: center;
-      justify-content: center;
-      ul li a{
-        color: #fff;
-        &:hover{
-          color: #1b1b1b !important;
-        }
-      }
-    }
-    // ############### mobile menu #################
   }
 
   .middle_header {
@@ -306,7 +256,7 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      figure{
+      figure {
         margin-bottom: 1.5rem;
         img.header_img {
           width: 18rem;
@@ -314,7 +264,7 @@ header {
           border-radius: 50%;
         }
       }
-      
+
       .profesion {
         font-size: 2.6rem;
         font-weight: 300;
@@ -338,7 +288,7 @@ header {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  transition: .3s;
+  transition: 0.3s;
   font-weight: 500;
   &:hover {
     color: var(--primary-color);
@@ -376,12 +326,12 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-left: .3rem;
-    transition: .3s;
-}
-&:hover i.fa-solid.fa-arrow-down{
-border-color: #ff014f;
-}
+    margin-left: 0.3rem;
+    transition: 0.3s;
+  }
+  &:hover i.fa-solid.fa-arrow-down {
+    border-color: #ff014f;
+  }
 }
 
 // #################### footer start ########################

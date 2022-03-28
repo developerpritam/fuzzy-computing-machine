@@ -17,21 +17,25 @@ nav.classList.toggle("sticky", window.scrollY > 0);
 
 // mobile menu =======================================
 
-const toggle = document.getElementById('toggle');
-const sidebar = document.getElementById('sidebar');
+const navMenu = document.getElementById('sidebar');
+const toggleMenu = document.getElementById('toggle-menu');
+const closeMenu = document.getElementById('close-menu');
 
+// click outside of the navigation
 document.onclick = function(e){
-  if(e.target.id !== 'sidebar' && e.target.id !== 'toggle')
+  if(e.target.id !== 'sidebar' && e.target.id !== 'toggle-menu')
   {
-  toggle.classList.remove('active');
-  sidebar.classList.remove('change');
+    navMenu.classList.remove('show');
   }
 }
+// click outside of the navigation
 
-toggle.onclick = function(){
-  toggle.classList.toggle('active');
-  sidebar.classList.toggle('change');
-}
+ toggleMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+ });
+ closeMenu.addEventListener('click', () => {
+  navMenu.classList.remove('show');
+ });
 // mobile menu =======================================
 
 // skills section code ===============================
